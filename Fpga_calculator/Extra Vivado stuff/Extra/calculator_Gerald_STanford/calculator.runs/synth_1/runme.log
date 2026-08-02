@@ -1,0 +1,323 @@
+
+*** Running vivado
+    with args -log single_cycle_calculator.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source single_cycle_calculator.tcl
+
+
+ECHO is off.
+ECHO is off.
+
+****** Vivado v2023.1 (64-bit)
+  **** SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
+  **** IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+  **** SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source single_cycle_calculator.tcl -notrace
+create_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 437.805 ; gain = 164.992
+Command: read_checkpoint -auto_incremental -incremental C:/Users/duckp/OneDrive/Desktop/Coding_Projects/Vivado/calculator/calculator.srcs/utils_1/imports/synth_1/single_cycle_calculator.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/duckp/OneDrive/Desktop/Coding_Projects/Vivado/calculator/calculator.srcs/utils_1/imports/synth_1/single_cycle_calculator.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top single_cycle_calculator -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 9544
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1256.273 ; gain = 411.859
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'single_cycle_calculator' [C:/Users/duckp/OneDrive/Desktop/Coding_Projects/Vivado/calculator/calculator.srcs/sources_1/imports/Lab4/single_cycle_calculator.vhdl:12]
+INFO: [Synth 8-3491] module 'twos_complement_circuit' declared at 'C:/Users/duckp/OneDrive/Desktop/Coding_Projects/Vivado/calculator/calculator.srcs/sources_1/imports/components/twos_complement_circuit.vhdl:5' bound to instance 'twos' of component 'twos_complement_circuit' [C:/Users/duckp/OneDrive/Desktop/Coding_Projects/Vivado/calculator/calculator.srcs/sources_1/imports/Lab4/single_cycle_calculator.vhdl:100]
+INFO: [Synth 8-638] synthesizing module 'twos_complement_circuit' [C:/Users/duckp/OneDrive/Desktop/Coding_Projects/Vivado/calculator/calculator.srcs/sources_1/imports/components/twos_complement_circuit.vhdl:11]
+INFO: [Synth 8-3491] module 'eight_input_inverter' declared at 'C:/Users/duckp/OneDrive/Desktop/Coding_Projects/Vivado/calculator/calculator.srcs/sources_1/imports/components/eight_input_inverter.vhdl:7' bound to instance 'inv1' of component 'eight_input_inverter' [C:/Users/duckp/OneDrive/Desktop/Coding_Projects/Vivado/calculator/calculator.srcs/sources_1/imports/components/twos_complement_circuit.vhdl:48]
+INFO: [Synth 8-638] synthesizing module 'eight_input_inverter' [C:/Users/duckp/OneDrive/Desktop/Coding_Projects/Vivado/calculator/calculator.srcs/sources_1/imports/components/eight_input_inverter.vhdl:14]
+INFO: [Synth 8-256] done synthesizing module 'eight_input_inverter' (0#1) [C:/Users/duckp/OneDrive/Desktop/Coding_Projects/Vivado/calculator/calculator.srcs/sources_1/imports/components/eight_input_inverter.vhdl:14]
+INFO: [Synth 8-3491] module 'eight_input_inverter' declared at 'C:/Users/duckp/OneDrive/Desktop/Coding_Projects/Vivado/calculator/calculator.srcs/sources_1/imports/components/eight_input_inverter.vhdl:7' bound to instance 'inv2' of component 'eight_input_inverter' [C:/Users/duckp/OneDrive/Desktop/Coding_Projects/Vivado/calculator/calculator.srcs/sources_1/imports/components/twos_complement_circuit.vhdl:49]
+INFO: [Synth 8-3491] module 'two_input_eight_width_and_gate' declared at 'C:/Users/duckp/OneDrive/Desktop/Coding_Projects/Vivado/calculator/calculator.srcs/sources_1/imports/components/two_input_eight_width_and_gate.vhdl:6' bound to instance 'andg' of component 'two_input_eight_width_and_gate' [C:/Users/duckp/OneDrive/Desktop/Coding_Projects/Vivado/calculator/calculator.srcs/sources_1/imports/components/twos_complement_circuit.vhdl:50]
+INFO: [Synth 8-638] synthesizing module 'two_input_eight_width_and_gate' [C:/Users/duckp/OneDrive/Desktop/Coding_Projects/Vivado/calculator/calculator.srcs/sources_1/imports/components/two_input_eight_width_and_gate.vhdl:10]
+INFO: [Synth 8-256] done synthesizing module 'two_input_eight_width_and_gate' (0#1) [C:/Users/duckp/OneDrive/Desktop/Coding_Projects/Vivado/calculator/calculator.srcs/sources_1/imports/components/two_input_eight_width_and_gate.vhdl:10]
+	Parameter DataWidth bound to: 8 - type: integer 
+INFO: [Synth 8-3491] module 'plus_n_adder_nocarry' declared at 'C:/Users/duckp/OneDrive/Desktop/Coding_Projects/Vivado/calculator/calculator.srcs/sources_1/imports/components/plus_n_adder_nocarry.vhdl:6' bound to instance 'adder' of component 'plus_n_adder_nocarry' [C:/Users/duckp/OneDrive/Desktop/Coding_Projects/Vivado/calculator/calculator.srcs/sources_1/imports/components/twos_complement_circuit.vhdl:51]
+INFO: [Synth 8-638] synthesizing module 'plus_n_adder_nocarry' [C:/Users/duckp/OneDrive/Desktop/Coding_Projects/Vivado/calculator/calculator.srcs/sources_1/imports/components/plus_n_adder_nocarry.vhdl:12]
+	Parameter DataWidth bound to: 8 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'plus_n_adder_nocarry' (0#1) [C:/Users/duckp/OneDrive/Desktop/Coding_Projects/Vivado/calculator/calculator.srcs/sources_1/imports/components/plus_n_adder_nocarry.vhdl:12]
+	Parameter DataWidth bound to: 8 - type: integer 
+INFO: [Synth 8-3491] module 'two_input_Mux' declared at 'C:/Users/duckp/OneDrive/Desktop/Coding_Projects/Vivado/calculator/calculator.srcs/sources_1/imports/components/two_input_mux.vhdl:6' bound to instance 'mux1' of component 'two_input_Mux' [C:/Users/duckp/OneDrive/Desktop/Coding_Projects/Vivado/calculator/calculator.srcs/sources_1/imports/components/twos_complement_circuit.vhdl:54]
+INFO: [Synth 8-638] synthesizing module 'two_input_Mux' [C:/Users/duckp/OneDrive/Desktop/Coding_Projects/Vivado/calculator/calculator.srcs/sources_1/imports/components/two_input_mux.vhdl:14]
+	Parameter DataWidth bound to: 8 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'two_input_Mux' (0#1) [C:/Users/duckp/OneDrive/Desktop/Coding_Projects/Vivado/calculator/calculator.srcs/sources_1/imports/components/two_input_mux.vhdl:14]
+	Parameter DataWidth bound to: 8 - type: integer 
+INFO: [Synth 8-3491] module 'two_input_Mux' declared at 'C:/Users/duckp/OneDrive/Desktop/Coding_Projects/Vivado/calculator/calculator.srcs/sources_1/imports/components/two_input_mux.vhdl:6' bound to instance 'mux2' of component 'two_input_Mux' [C:/Users/duckp/OneDrive/Desktop/Coding_Projects/Vivado/calculator/calculator.srcs/sources_1/imports/components/twos_complement_circuit.vhdl:57]
+INFO: [Synth 8-256] done synthesizing module 'twos_complement_circuit' (0#1) [C:/Users/duckp/OneDrive/Desktop/Coding_Projects/Vivado/calculator/calculator.srcs/sources_1/imports/components/twos_complement_circuit.vhdl:11]
+INFO: [Synth 8-3491] module 'sign_extender' declared at 'C:/Users/duckp/OneDrive/Desktop/Coding_Projects/Vivado/calculator/calculator.srcs/sources_1/imports/components/sign_extender.vhdl:5' bound to instance 'sign_ex' of component 'sign_extender' [C:/Users/duckp/OneDrive/Desktop/Coding_Projects/Vivado/calculator/calculator.srcs/sources_1/imports/Lab4/single_cycle_calculator.vhdl:103]
+INFO: [Synth 8-638] synthesizing module 'sign_extender' [C:/Users/duckp/OneDrive/Desktop/Coding_Projects/Vivado/calculator/calculator.srcs/sources_1/imports/components/sign_extender.vhdl:10]
+INFO: [Synth 8-256] done synthesizing module 'sign_extender' (0#1) [C:/Users/duckp/OneDrive/Desktop/Coding_Projects/Vivado/calculator/calculator.srcs/sources_1/imports/components/sign_extender.vhdl:10]
+	Parameter DataWidth bound to: 8 - type: integer 
+INFO: [Synth 8-3491] module 'two_input_Mux' declared at 'C:/Users/duckp/OneDrive/Desktop/Coding_Projects/Vivado/calculator/calculator.srcs/sources_1/imports/components/two_input_mux.vhdl:6' bound to instance 'wd_mux' of component 'two_input_Mux' [C:/Users/duckp/OneDrive/Desktop/Coding_Projects/Vivado/calculator/calculator.srcs/sources_1/imports/Lab4/single_cycle_calculator.vhdl:105]
+INFO: [Synth 8-3491] module 'control_unit' declared at 'C:/Users/duckp/OneDrive/Desktop/Coding_Projects/Vivado/calculator/calculator.srcs/sources_1/imports/components/control_unit.vhdl:5' bound to instance 'cu' of component 'control_unit' [C:/Users/duckp/OneDrive/Desktop/Coding_Projects/Vivado/calculator/calculator.srcs/sources_1/imports/Lab4/single_cycle_calculator.vhdl:110]
+INFO: [Synth 8-638] synthesizing module 'control_unit' [C:/Users/duckp/OneDrive/Desktop/Coding_Projects/Vivado/calculator/calculator.srcs/sources_1/imports/components/control_unit.vhdl:10]
+INFO: [Synth 8-256] done synthesizing module 'control_unit' (0#1) [C:/Users/duckp/OneDrive/Desktop/Coding_Projects/Vivado/calculator/calculator.srcs/sources_1/imports/components/control_unit.vhdl:10]
+INFO: [Synth 8-3491] module 'alu_logic_unit' declared at 'C:/Users/duckp/OneDrive/Desktop/Coding_Projects/Vivado/calculator/calculator.srcs/sources_1/imports/components/alu_logic_unit.vhdl:5' bound to instance 'alu_logic' of component 'alu_logic_unit' [C:/Users/duckp/OneDrive/Desktop/Coding_Projects/Vivado/calculator/calculator.srcs/sources_1/imports/Lab4/single_cycle_calculator.vhdl:113]
+INFO: [Synth 8-638] synthesizing module 'alu_logic_unit' [C:/Users/duckp/OneDrive/Desktop/Coding_Projects/Vivado/calculator/calculator.srcs/sources_1/imports/components/alu_logic_unit.vhdl:10]
+INFO: [Synth 8-256] done synthesizing module 'alu_logic_unit' (0#1) [C:/Users/duckp/OneDrive/Desktop/Coding_Projects/Vivado/calculator/calculator.srcs/sources_1/imports/components/alu_logic_unit.vhdl:10]
+INFO: [Synth 8-3491] module 'alu' declared at 'C:/Users/duckp/OneDrive/Desktop/Coding_Projects/Vivado/calculator/calculator.srcs/sources_1/imports/components/alu.vhdl:5' bound to instance 'alu_op' of component 'alu' [C:/Users/duckp/OneDrive/Desktop/Coding_Projects/Vivado/calculator/calculator.srcs/sources_1/imports/Lab4/single_cycle_calculator.vhdl:117]
+INFO: [Synth 8-638] synthesizing module 'alu' [C:/Users/duckp/OneDrive/Desktop/Coding_Projects/Vivado/calculator/calculator.srcs/sources_1/imports/components/alu.vhdl:12]
+INFO: [Synth 8-256] done synthesizing module 'alu' (0#1) [C:/Users/duckp/OneDrive/Desktop/Coding_Projects/Vivado/calculator/calculator.srcs/sources_1/imports/components/alu.vhdl:12]
+INFO: [Synth 8-3491] module 'print_module_led' declared at 'C:/Users/duckp/OneDrive/Desktop/Coding_Projects/Vivado/calculator/calculator.srcs/sources_1/imports/components/print_module_led.vhdl:5' bound to instance 'print' of component 'print_module_led' [C:/Users/duckp/OneDrive/Desktop/Coding_Projects/Vivado/calculator/calculator.srcs/sources_1/imports/Lab4/single_cycle_calculator.vhdl:120]
+INFO: [Synth 8-638] synthesizing module 'print_module_led' [C:/Users/duckp/OneDrive/Desktop/Coding_Projects/Vivado/calculator/calculator.srcs/sources_1/imports/components/print_module_led.vhdl:13]
+WARNING: [Synth 8-614] signal 'enable' is read in the process but is not in the sensitivity list [C:/Users/duckp/OneDrive/Desktop/Coding_Projects/Vivado/calculator/calculator.srcs/sources_1/imports/components/print_module_led.vhdl:17]
+INFO: [Synth 8-256] done synthesizing module 'print_module_led' (0#1) [C:/Users/duckp/OneDrive/Desktop/Coding_Projects/Vivado/calculator/calculator.srcs/sources_1/imports/components/print_module_led.vhdl:13]
+INFO: [Synth 8-3491] module 'register_file' declared at 'C:/Users/duckp/OneDrive/Desktop/Coding_Projects/Vivado/calculator/calculator.srcs/sources_1/imports/components/register_file.vhdl:4' bound to instance 'reg_file' of component 'register_file' [C:/Users/duckp/OneDrive/Desktop/Coding_Projects/Vivado/calculator/calculator.srcs/sources_1/imports/Lab4/single_cycle_calculator.vhdl:122]
+INFO: [Synth 8-638] synthesizing module 'register_file' [C:/Users/duckp/OneDrive/Desktop/Coding_Projects/Vivado/calculator/calculator.srcs/sources_1/imports/components/register_file.vhdl:13]
+WARNING: [Synth 8-614] signal 'enable' is read in the process but is not in the sensitivity list [C:/Users/duckp/OneDrive/Desktop/Coding_Projects/Vivado/calculator/calculator.srcs/sources_1/imports/components/register_file.vhdl:19]
+WARNING: [Synth 8-614] signal 'reg0' is read in the process but is not in the sensitivity list [C:/Users/duckp/OneDrive/Desktop/Coding_Projects/Vivado/calculator/calculator.srcs/sources_1/imports/components/register_file.vhdl:37]
+WARNING: [Synth 8-614] signal 'reg1' is read in the process but is not in the sensitivity list [C:/Users/duckp/OneDrive/Desktop/Coding_Projects/Vivado/calculator/calculator.srcs/sources_1/imports/components/register_file.vhdl:37]
+WARNING: [Synth 8-614] signal 'reg2' is read in the process but is not in the sensitivity list [C:/Users/duckp/OneDrive/Desktop/Coding_Projects/Vivado/calculator/calculator.srcs/sources_1/imports/components/register_file.vhdl:37]
+WARNING: [Synth 8-614] signal 'reg3' is read in the process but is not in the sensitivity list [C:/Users/duckp/OneDrive/Desktop/Coding_Projects/Vivado/calculator/calculator.srcs/sources_1/imports/components/register_file.vhdl:37]
+WARNING: [Synth 8-614] signal 'reg0' is read in the process but is not in the sensitivity list [C:/Users/duckp/OneDrive/Desktop/Coding_Projects/Vivado/calculator/calculator.srcs/sources_1/imports/components/register_file.vhdl:53]
+WARNING: [Synth 8-614] signal 'reg1' is read in the process but is not in the sensitivity list [C:/Users/duckp/OneDrive/Desktop/Coding_Projects/Vivado/calculator/calculator.srcs/sources_1/imports/components/register_file.vhdl:53]
+WARNING: [Synth 8-614] signal 'reg2' is read in the process but is not in the sensitivity list [C:/Users/duckp/OneDrive/Desktop/Coding_Projects/Vivado/calculator/calculator.srcs/sources_1/imports/components/register_file.vhdl:53]
+WARNING: [Synth 8-614] signal 'reg3' is read in the process but is not in the sensitivity list [C:/Users/duckp/OneDrive/Desktop/Coding_Projects/Vivado/calculator/calculator.srcs/sources_1/imports/components/register_file.vhdl:53]
+INFO: [Synth 8-256] done synthesizing module 'register_file' (0#1) [C:/Users/duckp/OneDrive/Desktop/Coding_Projects/Vivado/calculator/calculator.srcs/sources_1/imports/components/register_file.vhdl:13]
+INFO: [Synth 8-3491] module 'instruction_picker_two' declared at 'C:/Users/duckp/OneDrive/Desktop/Coding_Projects/Vivado/calculator/calculator.srcs/sources_1/imports/components/instruction_picker_two.vhdl:5' bound to instance 'instruction' of component 'instruction_picker_two' [C:/Users/duckp/OneDrive/Desktop/Coding_Projects/Vivado/calculator/calculator.srcs/sources_1/imports/Lab4/single_cycle_calculator.vhdl:126]
+INFO: [Synth 8-638] synthesizing module 'instruction_picker_two' [C:/Users/duckp/OneDrive/Desktop/Coding_Projects/Vivado/calculator/calculator.srcs/sources_1/imports/components/instruction_picker_two.vhdl:13]
+WARNING: [Synth 8-614] signal 'branch_st' is read in the process but is not in the sensitivity list [C:/Users/duckp/OneDrive/Desktop/Coding_Projects/Vivado/calculator/calculator.srcs/sources_1/imports/components/instruction_picker_two.vhdl:30]
+WARNING: [Synth 8-614] signal 'jump_st' is read in the process but is not in the sensitivity list [C:/Users/duckp/OneDrive/Desktop/Coding_Projects/Vivado/calculator/calculator.srcs/sources_1/imports/components/instruction_picker_two.vhdl:30]
+WARNING: [Synth 8-614] signal 'User_Input' is read in the process but is not in the sensitivity list [C:/Users/duckp/OneDrive/Desktop/Coding_Projects/Vivado/calculator/calculator.srcs/sources_1/imports/components/instruction_picker_two.vhdl:30]
+WARNING: [Synth 8-614] signal 'set_st' is read in the process but is not in the sensitivity list [C:/Users/duckp/OneDrive/Desktop/Coding_Projects/Vivado/calculator/calculator.srcs/sources_1/imports/components/instruction_picker_two.vhdl:30]
+INFO: [Synth 8-256] done synthesizing module 'instruction_picker_two' (0#1) [C:/Users/duckp/OneDrive/Desktop/Coding_Projects/Vivado/calculator/calculator.srcs/sources_1/imports/components/instruction_picker_two.vhdl:13]
+INFO: [Synth 8-256] done synthesizing module 'single_cycle_calculator' (0#1) [C:/Users/duckp/OneDrive/Desktop/Coding_Projects/Vivado/calculator/calculator.srcs/sources_1/imports/Lab4/single_cycle_calculator.vhdl:12]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1349.574 ; gain = 505.160
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1349.574 ; gain = 505.160
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1349.574 ; gain = 505.160
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1349.574 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/duckp/OneDrive/Desktop/Coding_Projects/Vivado/calculator/calculator.srcs/constrs_1/new/calc.xdc]
+CRITICAL WARNING: [Designutils 20-970] Unrecognized or unsupported command 'set_property PACKAGE_PIN R2 [get_ports {clockC]
+set_property IOSTANDARD LVCMOS33 [get_ports {clockC}]
+
+#set_property PACKAGE_PIN U18 [get_ports clockC]
+#set_property IOSTANDARD LVCMOS33 [get_ports clo ... (truncated) ' found in constraint file. [C:/Users/duckp/OneDrive/Desktop/Coding_Projects/Vivado/calculator/calculator.srcs/constrs_1/new/calc.xdc:3]
+Finished Parsing XDC File [C:/Users/duckp/OneDrive/Desktop/Coding_Projects/Vivado/calculator/calculator.srcs/constrs_1/new/calc.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1453.355 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1453.355 ; gain = 0.000
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 1453.355 ; gain = 608.941
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 1453.355 ; gain = 608.941
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 1453.355 ; gain = 608.941
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-327] inferring latch for variable 'Output1_reg' [C:/Users/duckp/OneDrive/Desktop/Coding_Projects/Vivado/calculator/calculator.srcs/sources_1/imports/components/sign_extender.vhdl:18]
+WARNING: [Synth 8-327] inferring latch for variable 'we_reg' [C:/Users/duckp/OneDrive/Desktop/Coding_Projects/Vivado/calculator/calculator.srcs/sources_1/imports/components/control_unit.vhdl:16]
+WARNING: [Synth 8-327] inferring latch for variable 'inx_reg' [C:/Users/duckp/OneDrive/Desktop/Coding_Projects/Vivado/calculator/calculator.srcs/sources_1/imports/components/control_unit.vhdl:19]
+WARNING: [Synth 8-327] inferring latch for variable 'alu_reg' [C:/Users/duckp/OneDrive/Desktop/Coding_Projects/Vivado/calculator/calculator.srcs/sources_1/imports/components/control_unit.vhdl:18]
+WARNING: [Synth 8-327] inferring latch for variable 'pri_reg' [C:/Users/duckp/OneDrive/Desktop/Coding_Projects/Vivado/calculator/calculator.srcs/sources_1/imports/components/control_unit.vhdl:20]
+WARNING: [Synth 8-327] inferring latch for variable 'jb_reg' [C:/Users/duckp/OneDrive/Desktop/Coding_Projects/Vivado/calculator/calculator.srcs/sources_1/imports/components/control_unit.vhdl:21]
+WARNING: [Synth 8-327] inferring latch for variable 'bb_reg' [C:/Users/duckp/OneDrive/Desktop/Coding_Projects/Vivado/calculator/calculator.srcs/sources_1/imports/components/control_unit.vhdl:22]
+WARNING: [Synth 8-327] inferring latch for variable 'Output1_reg' [C:/Users/duckp/OneDrive/Desktop/Coding_Projects/Vivado/calculator/calculator.srcs/sources_1/imports/components/alu.vhdl:18]
+WARNING: [Synth 8-327] inferring latch for variable 'set_reg' [C:/Users/duckp/OneDrive/Desktop/Coding_Projects/Vivado/calculator/calculator.srcs/sources_1/imports/components/alu.vhdl:19]
+WARNING: [Synth 8-327] inferring latch for variable 'led_reg' [C:/Users/duckp/OneDrive/Desktop/Coding_Projects/Vivado/calculator/calculator.srcs/sources_1/imports/components/print_module_led.vhdl:20]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1453.355 ; gain = 608.941
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input    8 Bit       Adders := 2     
+	   3 Input    8 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 4     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input    8 Bit        Muxes := 7     
+	   4 Input    8 Bit        Muxes := 1     
+	   5 Input    8 Bit        Muxes := 2     
+	   5 Input    3 Bit        Muxes := 1     
+	   4 Input    2 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 41    
+	   4 Input    1 Bit        Muxes := 3     
+	   5 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-3332] Sequential element (sign_ex/Output1_reg[7]) is unused and will be removed from module single_cycle_calculator.
+WARNING: [Synth 8-3332] Sequential element (sign_ex/Output1_reg[2]) is unused and will be removed from module single_cycle_calculator.
+WARNING: [Synth 8-3332] Sequential element (sign_ex/Output1_reg[1]) is unused and will be removed from module single_cycle_calculator.
+WARNING: [Synth 8-3332] Sequential element (sign_ex/Output1_reg[0]) is unused and will be removed from module single_cycle_calculator.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1453.355 ; gain = 608.941
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 1453.355 ; gain = 608.941
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 1453.355 ; gain = 608.941
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 1453.355 ; gain = 608.941
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 1453.355 ; gain = 608.941
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 1453.355 ; gain = 608.941
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 1453.355 ; gain = 608.941
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 1453.355 ; gain = 608.941
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 1453.355 ; gain = 608.941
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 1453.355 ; gain = 608.941
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |     4|
+|3     |LUT1   |     8|
+|4     |LUT2   |     9|
+|5     |LUT3   |    23|
+|6     |LUT4   |    21|
+|7     |LUT5   |     9|
+|8     |LUT6   |    30|
+|9     |FDRE   |    35|
+|10    |LD     |     8|
+|11    |LDC    |    12|
+|12    |LDCP   |     1|
+|13    |LDP    |     2|
+|14    |IBUF   |     9|
+|15    |OBUF   |     8|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 1453.355 ; gain = 608.941
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 15 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:15 ; elapsed = 00:00:23 . Memory (MB): peak = 1453.355 ; gain = 505.160
+Synthesis Optimization Complete : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 1453.355 ; gain = 608.941
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1453.355 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 27 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1453.355 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 23 instances were transformed.
+  LD => LDCE: 8 instances
+  LDC => LDCE: 12 instances
+  LDCP => LDCP (GND, LDCE, LUT3(x2), VCC): 1 instance 
+  LDP => LDPE: 2 instances
+
+Synth Design complete | Checksum: 1b77c901
+INFO: [Common 17-83] Releasing license: Synthesis
+61 Infos, 29 Warnings, 1 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:27 ; elapsed = 00:00:30 . Memory (MB): peak = 1453.355 ; gain = 990.723
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+INFO: [Common 17-1381] The checkpoint 'C:/Users/duckp/OneDrive/Desktop/Coding_Projects/Vivado/calculator/calculator.runs/synth_1/single_cycle_calculator.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file single_cycle_calculator_utilization_synth.rpt -pb single_cycle_calculator_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed May 24 23:55:12 2023...

@@ -1,0 +1,18 @@
+Testbench Instructions:
+11001000 -- Load 2 to 00 			-- print 0 
+11010001 -- load 4 to 01 			-- print 0
+00110100 -- print 01     			-- print 4
+11001110 -- load 3 to 10 			-- print 4
+10011010 --	add 01 to 10 store in 10 	-- print 4 -- 10 now 7
+00111000 -- print 10				-- print 7
+00000000 -- nop 					-- print should go blank
+11010011 -- load 4 to 11			-- print back to 7
+01011100 -- branch test 01 and 11		-- print 7
+10010101 -- add -1 to 01 (shouldnt run)   -- will print 00 instead "00110000";  -- print 00 = 2
+00100000 -- neg 00 store 00			-- print 2
+00110000 -- print 00				-- print -2
+00000001 -- jump					-- print -2
+00100101 -- neg 01 (skipped) nop		-- print blank
+00110100 -- print 01				-- print 4
+00100101 -- neg 01 to 01			-- print 4
+00110100 -- print 01				-- print -4

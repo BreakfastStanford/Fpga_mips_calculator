@@ -1,0 +1,7 @@
+set_property SRC_FILE_INFO {cfile:C:/Users/duckp/OneDrive/Desktop/Coding_Projects/Vivado/Example_project_1/Example_project_1.srcs/constrs_1/new/And_gate.xdc rfile:../../../Example_project_1.srcs/constrs_1/new/And_gate.xdc id:1} [current_design]
+set_property src_info {type:XDC file:1 line:2 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN V17 [get_ports {In_1}]
+set_property src_info {type:XDC file:1 line:4 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN V16 [get_ports {In_2}]
+set_property src_info {type:XDC file:1 line:10 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN U16 [get_ports {Out_1}]

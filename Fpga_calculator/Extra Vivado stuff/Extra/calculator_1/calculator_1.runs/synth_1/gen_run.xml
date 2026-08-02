@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1684827281" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/aluTb.dcp">
+  <File Type="PA-TCL" Name="single_cycle_calculatorTb.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="single_cycle_calculatorTb_drc_synth.rpt"/>
+  <File Type="REPORTS-TCL" Name="single_cycle_calculatorTb_reports.tcl"/>
+  <File Type="RDS-RDS" Name="single_cycle_calculatorTb.vds"/>
+  <File Type="RDS-UTIL" Name="single_cycle_calculatorTb_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="single_cycle_calculatorTb_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="single_cycle_calculatorTb.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="single_cycle_calculatorTb_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="single_cycle_calculatorTb_timing_summary_synth.pb"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/imports/Lab3/components/alu.vhdl">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../vhdl/Lab3/components/alu.vhdl"/>
+        <Attr Name="ImportTime" Val="1683114185"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Lab3/components/alu_logic_unit.vhdl">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../vhdl/Lab3/components/alu_logic_unit.vhdl"/>
+        <Attr Name="ImportTime" Val="1682903950"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Lab3/components/control_unit.vhdl">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../vhdl/Lab3/components/control_unit.vhdl"/>
+        <Attr Name="ImportTime" Val="1683116783"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Lab3/components/eight_input_inverter.vhdl">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../vhdl/Lab3/components/eight_input_inverter.vhdl"/>
+        <Attr Name="ImportTime" Val="1682620577"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Lab3/components/plus_n_adder_nocarry.vhdl">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../vhdl/Lab3/components/plus_n_adder_nocarry.vhdl"/>
+        <Attr Name="ImportTime" Val="1682788846"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Lab3/components/print_module.vhdl">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../vhdl/Lab3/components/print_module.vhdl"/>
+        <Attr Name="ImportTime" Val="1683119473"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Lab3/components/register_file.vhdl">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../vhdl/Lab3/components/register_file.vhdl"/>
+        <Attr Name="ImportTime" Val="1683116555"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Lab3/components/sign_extender.vhdl">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../vhdl/Lab3/components/sign_extender.vhdl"/>
+        <Attr Name="ImportTime" Val="1682744258"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Lab3/single_cycle_calculator.vhdl">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../vhdl/Lab3/single_cycle_calculator.vhdl"/>
+        <Attr Name="ImportTime" Val="1683106017"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Lab3/components/two_input_eight_width_and_gate.vhdl">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../vhdl/Lab3/components/two_input_eight_width_and_gate.vhdl"/>
+        <Attr Name="ImportTime" Val="1682696078"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Lab3/components/two_input_mux.vhdl">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../vhdl/Lab3/components/two_input_mux.vhdl"/>
+        <Attr Name="ImportTime" Val="1682811706"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Lab3/components/twos_complement_circuit.vhdl">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../vhdl/Lab3/components/twos_complement_circuit.vhdl"/>
+        <Attr Name="ImportTime" Val="1683102086"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Lab3/single_cycle_calculatorTb.vhdl">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../vhdl/Lab3/single_cycle_calculatorTb.vhdl"/>
+        <Attr Name="ImportTime" Val="1683120688"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Lab3/testbenches/aluTb.vhdl">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../vhdl/Lab3/testbenches/aluTb.vhdl"/>
+        <Attr Name="ImportTime" Val="1683071667"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Lab3/testbenches/alu_logic_unitTb.vhdl">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../vhdl/Lab3/testbenches/alu_logic_unitTb.vhdl"/>
+        <Attr Name="ImportTime" Val="1683071222"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Lab3/testbenches/control_unitTb.vhdl">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../vhdl/Lab3/testbenches/control_unitTb.vhdl"/>
+        <Attr Name="ImportTime" Val="1683116893"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Lab3/components/eight_bit_register.vhdl">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../vhdl/Lab3/components/eight_bit_register.vhdl"/>
+        <Attr Name="ImportTime" Val="1683073812"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Lab3/testbenches/eight_bit_registerTb.vhdl">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../vhdl/Lab3/testbenches/eight_bit_registerTb.vhdl"/>
+        <Attr Name="ImportTime" Val="1683094802"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Lab3/testbenches/eight_input_inverterTb.vhdl">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../vhdl/Lab3/testbenches/eight_input_inverterTb.vhdl"/>
+        <Attr Name="ImportTime" Val="1682808057"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Lab3/testbenches/plus_n_adder_nocarryTb.vhdl">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../vhdl/Lab3/testbenches/plus_n_adder_nocarryTb.vhdl"/>
+        <Attr Name="ImportTime" Val="1682790058"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Lab3/testbenches/print_moduleTb.vhdl">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../vhdl/Lab3/testbenches/print_moduleTb.vhdl"/>
+        <Attr Name="ImportTime" Val="1683101521"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Lab3/testbenches/register_fileTb.vhdl">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../vhdl/Lab3/testbenches/register_fileTb.vhdl"/>
+        <Attr Name="ImportTime" Val="1683099405"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Lab3/testbenches/sign_extenderTb.vhdl">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../vhdl/Lab3/testbenches/sign_extenderTb.vhdl"/>
+        <Attr Name="ImportTime" Val="1682744684"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Lab3/testbenches/two_input_MuxTb.vhdl">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../vhdl/Lab3/testbenches/two_input_MuxTb.vhdl"/>
+        <Attr Name="ImportTime" Val="1682623688"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Lab3/testbenches/two_input_eight_width_and_gateTb.vhdl">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../vhdl/Lab3/testbenches/two_input_eight_width_and_gateTb.vhdl"/>
+        <Attr Name="ImportTime" Val="1682601322"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Lab3/testbenches/twos_complement_circuitTb.vhdl">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../vhdl/Lab3/testbenches/twos_complement_circuitTb.vhdl"/>
+        <Attr Name="ImportTime" Val="1682812154"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="single_cycle_calculatorTb"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1" RelGenDir="$PGENDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1" RelGenDir="$PGENDIR/utils_1">
+    <Filter Type="Utils"/>
+    <File Path="$PSRCDIR/utils_1/imports/synth_1/aluTb.dcp">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedInSteps" Val="synth_1"/>
+        <Attr Name="AutoDcp" Val="1"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2023">
+      <Desc>Vivado Synthesis Defaults</Desc>
+    </StratHandle>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>

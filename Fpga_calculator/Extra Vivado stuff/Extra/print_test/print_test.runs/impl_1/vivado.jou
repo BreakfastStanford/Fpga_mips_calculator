@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2023.1 (64-bit)
+# SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
+# IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+# SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+# Start of session at: Fri May 26 00:51:55 2023
+# Process ID: 21180
+# Current directory: C:/Users/duckp/OneDrive/Desktop/Coding_Projects/Vivado/print_test/print_test.runs/impl_1
+# Command line: vivado.exe -log print_module_led.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source print_module_led.tcl -notrace
+# Log file: C:/Users/duckp/OneDrive/Desktop/Coding_Projects/Vivado/print_test/print_test.runs/impl_1/print_module_led.vdi
+# Journal file: C:/Users/duckp/OneDrive/Desktop/Coding_Projects/Vivado/print_test/print_test.runs/impl_1\vivado.jou
+# Running On: hyurtle, OS: Windows, CPU Frequency: 1996 MHz, CPU Physical cores: 16, Host memory: 12146 MB
+#-----------------------------------------------------------
+source print_module_led.tcl -notrace
